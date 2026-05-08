@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #023048;
+  --color-secondary: #659aba;
+  --color-accent: #c1111e;
+  --color-cream: #ffeed4;
+  --color-white: #ffffff;
+  --color-text-light: #ffeed4;
+  --color-card-bg: rgba(2, 48, 72, 0.88);
+  --font-main: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-cream);
+}
