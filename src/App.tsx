@@ -6,6 +6,7 @@ import Login from './pages/auth/Login';
 import Register from './pages/auth/Register';
 import RegisterBusiness from './pages/auth/RegisterBusiness';
 import Onboarding from './pages/partner/onboarding/Onboarding';
+import Dashboard from './pages/partner/Dashboard';
 
 const queryClient = new QueryClient();
 
@@ -16,12 +17,12 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/login" element={<Login />} />
-            <Route path="/partner/dashboard" element={<div style={{color:'white', padding:'40px', background:'#023048', minHeight:'100vh'}}>Dashboard — próximamente</div>} />
-            <Route path="/" element={<div style={{color:'white', padding:'40px', background:'#023048', minHeight:'100vh'}}>Inicio — próximamente</div>} />
-            <Route path="*" element={<Navigate to="/login" replace />} />
             <Route path="/register" element={<Register />} />
             <Route path="/register-business" element={<RegisterBusiness />} />
             <Route path="/partner/onboarding" element={<Onboarding />} />
+            <Route path="/partner/dashboard" element={<Dashboard />} />
+            <Route path="/" element={<Navigate to="/login" replace />} />
+            <Route path="*" element={<Navigate to="/login" replace />} />
           </Routes>
         </BrowserRouter>
       </ConfigProvider>

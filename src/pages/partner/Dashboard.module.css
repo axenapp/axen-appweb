@@ -1,0 +1,178 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pageTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+}
+
+.pageSubtitle {
+  font-size: 13px;
+  color: #888;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.statCard {
+  background: white;
+  border-radius: 12px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  border: 1px solid #eef2f6;
+}
+
+.statLabel {
+  font-size: 12px;
+  color: #888;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.statValue {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.statSub {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.statIcon {
+  font-size: 22px;
+  color: var(--color-secondary);
+  margin-bottom: 4px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  border: 1px solid #eef2f6;
+}
+
+.cardTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.turnoItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f4f8;
+}
+
+.turnoItem:last-child {
+  border-bottom: none;
+}
+
+.turnoInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.turnoNombre {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.turnoServicio {
+  font-size: 12px;
+  color: #888;
+}
+
+.turnoHora {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: #eef2f6;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.ratingValue {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.ratingTotal {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 4px;
+}
+
+.barRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: #666;
+}
+
+.barTrack {
+  flex: 1;
+  height: 6px;
+  background: #eef2f6;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background: var(--color-secondary);
+  border-radius: 3px;
+}
+
+.emptyState {
+  text-align: center;
+  color: #aaa;
+  font-size: 13px;
+  padding: 24px 0;
+}
+
+.loading {
+  text-align: center;
+  color: #aaa;
+  font-size: 13px;
+  padding: 40px 0;
+}
