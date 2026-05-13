@@ -8,6 +8,7 @@ import RegisterBusiness from './pages/auth/RegisterBusiness';
 import Onboarding from './pages/partner/onboarding/Onboarding';
 import Dashboard from './pages/partner/Dashboard';
 import Turnos from './pages/partner/Turnos';
+import Pagos from './pages/partner/Pagos';
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ function App() {
             <Route path="/" element={<Navigate to="/login" replace />} />
             <Route path="*" element={<Navigate to="/login" replace />} />
             <Route path="/partner/turnos" element={<Turnos />} />
+            <Route path="/partner/pagos" element={<Pagos />} />
           </Routes>
         </BrowserRouter>
       </ConfigProvider>
