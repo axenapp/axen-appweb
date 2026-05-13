@@ -7,6 +7,7 @@ import Register from './pages/auth/Register';
 import RegisterBusiness from './pages/auth/RegisterBusiness';
 import Onboarding from './pages/partner/onboarding/Onboarding';
 import Dashboard from './pages/partner/Dashboard';
+import Turnos from './pages/partner/Turnos';
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ function App() {
             <Route path="/partner/dashboard" element={<Dashboard />} />
             <Route path="/" element={<Navigate to="/login" replace />} />
             <Route path="*" element={<Navigate to="/login" replace />} />
+            <Route path="/partner/turnos" element={<Turnos />} />
           </Routes>
         </BrowserRouter>
       </ConfigProvider>
