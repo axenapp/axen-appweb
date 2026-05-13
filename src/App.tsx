@@ -5,6 +5,7 @@ import esES from 'antd/locale/es_ES';
 import Login from './pages/auth/Login';
 import Register from './pages/auth/Register';
 import RegisterBusiness from './pages/auth/RegisterBusiness';
+import Onboarding from './pages/partner/onboarding/Onboarding';
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ function App() {
             <Route path="*" element={<Navigate to="/login" replace />} />
             <Route path="/register" element={<Register />} />
             <Route path="/register-business" element={<RegisterBusiness />} />
+            <Route path="/partner/onboarding" element={<Onboarding />} />
           </Routes>
         </BrowserRouter>
       </ConfigProvider>
