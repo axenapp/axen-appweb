@@ -11,6 +11,7 @@ import Turnos from './pages/partner/Turnos';
 import Pagos from './pages/partner/Pagos';
 import Configuracion from './pages/partner/Configuracion';
 import Ayuda from './pages/partner/Ayuda';
+import Home from './pages/user/Home';
 
 const queryClient = new QueryClient();
 
@@ -20,17 +21,17 @@ function App() {
       <ConfigProvider locale={esES}>
         <BrowserRouter>
           <Routes>
+            <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/register-business" element={<RegisterBusiness />} />
             <Route path="/partner/onboarding" element={<Onboarding />} />
             <Route path="/partner/dashboard" element={<Dashboard />} />
-            <Route path="/" element={<Navigate to="/login" replace />} />
-            <Route path="*" element={<Navigate to="/login" replace />} />
             <Route path="/partner/turnos" element={<Turnos />} />
             <Route path="/partner/pagos" element={<Pagos />} />
             <Route path="/partner/configuracion" element={<Configuracion />} />
             <Route path="/partner/ayuda" element={<Ayuda />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </BrowserRouter>
       </ConfigProvider>
