@@ -10,6 +10,7 @@ import Dashboard from './pages/partner/Dashboard';
 import Turnos from './pages/partner/Turnos';
 import Pagos from './pages/partner/Pagos';
 import Configuracion from './pages/partner/Configuracion';
+import Ayuda from './pages/partner/Ayuda';
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ function App() {
             <Route path="/partner/turnos" element={<Turnos />} />
             <Route path="/partner/pagos" element={<Pagos />} />
             <Route path="/partner/configuracion" element={<Configuracion />} />
+            <Route path="/partner/ayuda" element={<Ayuda />} />
           </Routes>
         </BrowserRouter>
       </ConfigProvider>
