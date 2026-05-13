@@ -24,6 +24,8 @@ api.interceptors.response.use(
       sessionStorage.removeItem('token');
       sessionStorage.removeItem('user');
       window.location.href = '/login';
+    } else if (error.response?.status === 403) {
+      window.location.href = '/';
     }
     return Promise.reject(error);
   }

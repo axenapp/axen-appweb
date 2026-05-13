@@ -3,12 +3,14 @@ import { useNavigate, useLocation, Link } from 'react-router-dom';
 import {
   DashboardOutlined,
   CalendarOutlined,
+  AppstoreOutlined,
   WalletOutlined,
   SettingOutlined,
   QuestionCircleOutlined,
   UserOutlined,
   LogoutOutlined,
 } from '@ant-design/icons';
+
 import { Dropdown } from 'antd';
 import { useAuth } from '../../context/AuthContext';
 import api from '../../services/api';
@@ -17,9 +19,11 @@ import styles from './PartnerLayout.module.css';
 const navItems = [
   { path: '/partner/dashboard', label: 'Resumen', icon: <DashboardOutlined /> },
   { path: '/partner/turnos', label: 'Turnos', icon: <CalendarOutlined /> },
+  { path: '/partner/servicios', label: 'Servicios', icon: <AppstoreOutlined /> },
   { path: '/partner/pagos', label: 'Pagos', icon: <WalletOutlined /> },
   { path: '/partner/configuracion', label: 'Configuración', icon: <SettingOutlined /> },
 ];
+
 
 export default function PartnerLayout({ children }: { children: ReactNode }) {
   const navigate = useNavigate();
