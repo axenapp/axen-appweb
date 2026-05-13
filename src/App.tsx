@@ -3,6 +3,8 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ConfigProvider } from 'antd';
 import esES from 'antd/locale/es_ES';
 import Login from './pages/auth/Login';
+import Register from './pages/auth/Register';
+import RegisterBusiness from './pages/auth/RegisterBusiness';
 
 const queryClient = new QueryClient();
 
@@ -16,6 +18,8 @@ function App() {
             <Route path="/partner/dashboard" element={<div style={{color:'white', padding:'40px', background:'#023048', minHeight:'100vh'}}>Dashboard — próximamente</div>} />
             <Route path="/" element={<div style={{color:'white', padding:'40px', background:'#023048', minHeight:'100vh'}}>Inicio — próximamente</div>} />
             <Route path="*" element={<Navigate to="/login" replace />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/register-business" element={<RegisterBusiness />} />
           </Routes>
         </BrowserRouter>
       </ConfigProvider>

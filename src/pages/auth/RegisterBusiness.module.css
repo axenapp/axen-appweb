@@ -1,0 +1,214 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: var(--color-primary);
+  padding: 12px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(101, 154, 186, 0.3);
+}
+
+.logo {
+  height: 40px;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-cream);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.hero {
+  flex: 1;
+  background-image: url('/backlogin.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  padding: 48px 16px;
+}
+
+.formSide {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 280px;
+}
+
+.tagline {
+  color: var(--color-cream);
+  font-size: 18px;
+  font-weight: 500;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+.card {
+  background: var(--color-card-bg);
+  border: 1px solid rgba(101, 154, 186, 0.3);
+  border-radius: 12px;
+  padding: 32px 28px;
+  width: 100%;
+  max-width: 380px;
+  backdrop-filter: blur(8px);
+}
+
+.title {
+  color: var(--color-cream);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.field {
+  margin-bottom: 12px;
+}
+
+.label {
+  display: block;
+  color: var(--color-cream);
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.input {
+  width: 100%;
+  padding: 9px 12px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(101, 154, 186, 0.3);
+  border-radius: 6px;
+  color: var(--color-white);
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: var(--color-secondary);
+}
+
+.input::placeholder {
+  color: rgba(255, 238, 212, 0.5);
+}
+
+.select {
+  width: 100% !important;
+}
+
+.radioGroup {
+  display: flex;
+  gap: 20px;
+  margin-top: 4px;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-cream);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btnPrimary {
+  width: 100%;
+  padding: 11px;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 8px;
+}
+
+.btnPrimary:hover {
+  background-color: #a00e19;
+}
+
+.btnPrimary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  background: rgba(193, 17, 30, 0.15);
+  border: 1px solid rgba(193, 17, 30, 0.4);
+  border-radius: 6px;
+  padding: 10px 12px;
+  color: #ff6b75;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.successCard {
+  background: white;
+  border-radius: 12px;
+  padding: 48px 40px;
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+}
+
+.successTitle {
+  color: var(--color-primary);
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.successBold {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.successText {
+  color: #444;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.footer {
+  background-color: var(--color-primary);
+  border-top: 1px solid rgba(101, 154, 186, 0.2);
+  padding: 20px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footerLink {
+  color: rgba(255, 238, 212, 0.6);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.footerLink:hover {
+  color: var(--color-cream);
+}
+
+.footerLogo {
+  height: 32px;
+  opacity: 0.8;
+}
