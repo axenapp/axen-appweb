@@ -1,0 +1,176 @@
+.page {
+  min-height: 100vh;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 36px 32px;
+  max-width: 420px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+}
+
+.negocioLogo {
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(135deg, #ffeed4, #659aba33);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+}
+
+.criterio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.criterioLabel {
+  font-size: 15px;
+  font-weight: 700;
+  color: #023048;
+}
+
+.stars {
+  display: flex;
+  gap: 6px;
+}
+
+.starBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  font-size: 24px;
+  transition: transform 0.1s;
+}
+
+.starBtn:hover {
+  transform: scale(1.15);
+}
+
+.starOn {
+  color: #f5a623;
+  font-size: 24px;
+}
+
+.starOff {
+  color: #ddd;
+  font-size: 24px;
+}
+
+.comentarioSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.comentarioLabel {
+  font-size: 15px;
+  font-weight: 700;
+  color: #023048;
+  text-align: center;
+}
+
+.comentarioInput {
+  width: 100%;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 14px;
+  color: #333;
+  resize: vertical;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.comentarioInput:focus {
+  border-color: #659aba;
+}
+
+.error {
+  width: 100%;
+  background: #fff2f0;
+  border: 1px solid #ffccc7;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #c1111e;
+  text-align: center;
+}
+
+.enviarBtn {
+  width: 100%;
+  background: #023048;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.enviarBtn:hover:not(:disabled) {
+  background: #034a6e;
+}
+
+.enviarBtn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Enviado */
+.gracias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.graciasBox {
+  background: white;
+  border-radius: 12px;
+  padding: 24px 32px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #023048;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.btnVolver {
+  background: #023048;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 32px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btnVolver:hover {
+  background: #034a6e;
+}

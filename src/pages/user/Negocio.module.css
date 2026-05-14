@@ -1,0 +1,318 @@
+.page {
+  min-height: 100vh;
+  background: #f5f5f5;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.loadingPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e0e0e0;
+  border-top-color: #023048;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #023048;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  gap: 16px;
+}
+
+.backBtn {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+.backBtn:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.logo {
+  height: 28px;
+  cursor: pointer;
+}
+
+.favBtn {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: background 0.2s;
+}
+
+.favBtn:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* Main */
+.main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Hero card */
+.heroCard {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.heroLogo {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #659aba22, #023048aa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.heroInfo {
+  flex: 1;
+}
+
+.heroName {
+  font-size: 22px;
+  font-weight: 700;
+  color: #023048;
+  margin: 0 0 6px;
+}
+
+.heroRating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.starIcon {
+  color: #f5a623;
+  font-size: 14px;
+}
+
+.heroRating span:first-of-type {
+  font-weight: 700;
+  color: #023048;
+  font-size: 15px;
+}
+
+.ratingCount {
+  color: #888;
+  font-size: 13px;
+}
+
+.heroDesc {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Info bar */
+.infoBar {
+  background: white;
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #444;
+}
+
+.infoIcon {
+  color: #659aba;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+/* Section */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sectionTitle {
+  font-size: 17px;
+  font-weight: 700;
+  color: #023048;
+  margin: 0;
+}
+
+.emptyState {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* Services */
+.servicesList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.serviceCard {
+  background: white;
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.2s;
+  border: 2px solid transparent;
+}
+
+.serviceCard:hover {
+  border-color: #659aba;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(2,48,72,0.1);
+}
+
+.serviceInfo {
+  flex: 1;
+}
+
+.serviceName {
+  font-size: 15px;
+  font-weight: 600;
+  color: #023048;
+  margin-bottom: 4px;
+}
+
+.serviceDesc {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 6px;
+}
+
+.serviceMeta {
+  display: flex;
+  gap: 12px;
+}
+
+.serviceDuration {
+  font-size: 12px;
+  color: #999;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.serviceRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.servicePrice {
+  font-size: 16px;
+  font-weight: 700;
+  color: #023048;
+}
+
+.serviceArrow {
+  font-size: 22px;
+  color: #659aba;
+  font-weight: 300;
+}
+
+/* Reviews */
+.reviewsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reviewCard {
+  background: white;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.reviewHeader {
+  margin-bottom: 8px;
+}
+
+.reviewStars {
+  display: flex;
+  gap: 3px;
+}
+
+.starOn {
+  color: #f5a623;
+  font-size: 13px;
+}
+
+.starOff {
+  color: #ddd;
+  font-size: 13px;
+}
+
+.reviewComment {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+  line-height: 1.5;
+}
